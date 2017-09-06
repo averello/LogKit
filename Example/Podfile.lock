@@ -1,0 +1,46 @@
+PODS:
+  - ContentKit (1.6.5):
+    - Ents
+    - RepresentationKit
+  - Ents (1.17)
+  - LogKit (1.1.6):
+    - ContentKit
+    - RepresentationKit
+  - RepresentationKit (1.1.4)
+
+DEPENDENCIES:
+  - ContentKit (from `https://github.com/averello/ContentKit.git`)
+  - Ents (from `https://github.com/averello/Ents.git`)
+  - LogKit (from `../`)
+  - RepresentationKit (from `https://github.com/averello/RepresentationKit.git`)
+
+EXTERNAL SOURCES:
+  ContentKit:
+    :git: https://github.com/averello/ContentKit.git
+  Ents:
+    :git: https://github.com/averello/Ents.git
+  LogKit:
+    :path: "../"
+  RepresentationKit:
+    :git: https://github.com/averello/RepresentationKit.git
+
+CHECKOUT OPTIONS:
+  ContentKit:
+    :commit: ef561a488f2cde6731a76a163184578ec01fb0af
+    :git: https://github.com/averello/ContentKit.git
+  Ents:
+    :commit: 580e1880a334135f775b2cf1ef20f0e1a1540f1d
+    :git: https://github.com/averello/Ents.git
+  RepresentationKit:
+    :commit: 13a45a3a9e3e93def7662d6f7719e9fe4920f5d3
+    :git: https://github.com/averello/RepresentationKit.git
+
+SPEC CHECKSUMS:
+  ContentKit: b0ded7d9d57f77ca3c87261c97d606b4ea9f7bdf
+  Ents: f7469b80b3507e2bbc936c96b2cf61e79c0ce809
+  LogKit: 580d198cb760af1e217ae6af12c26d04b0f14a6b
+  RepresentationKit: 1ae7749916ed014403db30f3d38204d7e000dbd1
+
+PODFILE CHECKSUM: 806623dc0beef0c14dd3cf055f7d62d4cb652c7c
+
+COCOAPODS: 1.2.1

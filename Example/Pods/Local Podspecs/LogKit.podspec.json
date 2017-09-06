@@ -1,0 +1,30 @@
+{
+  "name": "LogKit",
+  "version": "1.1.6",
+  "summary": "Quick logging based on representations of objects.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/averello/LogKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Georges Boumis": "developer.george.boumis@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/averello/LogKit.git",
+    "tag": "1.1.6"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LogKit/Classes/**/*",
+  "dependencies": {
+    "RepresentationKit": [
+
+    ],
+    "ContentKit": [
+
+    ]
+  }
+}

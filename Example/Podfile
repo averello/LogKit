@@ -1,0 +1,9 @@
+use_frameworks!
+target 'LogKit_Tests' do
+  pod 'LogKit', :path => '../'
+  
+  pod 'RepresentationKit', :git => 'https://github.com/averello/RepresentationKit.git'
+  pod 'ContentKit', :git => 'https://github.com/averello/ContentKit.git'
+  pod 'Ents', :git => 'https://github.com/averello/Ents.git'
+  
+end

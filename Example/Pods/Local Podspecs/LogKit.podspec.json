@@ -1,6 +1,6 @@
 {
   "name": "LogKit",
-  "version": "1.1.6",
+  "version": "2.0",
   "summary": "Quick logging based on representations of objects.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/averello/LogKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/averello/LogKit.git",
-    "tag": "1.1.6"
+    "tag": "2.0"
   },
   "platforms": {
     "ios": "8.0"

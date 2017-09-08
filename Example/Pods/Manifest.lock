@@ -1,46 +1,48 @@
 PODS:
-  - ContentKit (1.6.5):
-    - Ents
+  - ContentKit (2.0):
     - RepresentationKit
-  - Ents (1.17)
-  - LogKit (1.1.6):
+  - Ents (2.0.1)
+  - LogKit (2.0):
     - ContentKit
     - RepresentationKit
-  - RepresentationKit (1.1.4)
+  - RepresentationKit (2.0)
 
 DEPENDENCIES:
-  - ContentKit (from `https://github.com/averello/ContentKit.git`)
-  - Ents (from `https://github.com/averello/Ents.git`)
+  - ContentKit (from `https://github.com/averello/ContentKit.git`, branch `feature/swift4`)
+  - Ents (from `https://github.com/averello/Ents.git`, branch `feature/swift4`)
   - LogKit (from `../`)
-  - RepresentationKit (from `https://github.com/averello/RepresentationKit.git`)
+  - RepresentationKit (from `https://github.com/averello/RepresentationKit.git`, branch `feature/swift4`)
 
 EXTERNAL SOURCES:
   ContentKit:
+    :branch: feature/swift4
     :git: https://github.com/averello/ContentKit.git
   Ents:
+    :branch: feature/swift4
     :git: https://github.com/averello/Ents.git
   LogKit:
     :path: "../"
   RepresentationKit:
+    :branch: feature/swift4
     :git: https://github.com/averello/RepresentationKit.git
 
 CHECKOUT OPTIONS:
   ContentKit:
-    :commit: ef561a488f2cde6731a76a163184578ec01fb0af
+    :commit: 68f8d2d064036e63a8ef788444d23634c126a2c0
     :git: https://github.com/averello/ContentKit.git
   Ents:
-    :commit: 580e1880a334135f775b2cf1ef20f0e1a1540f1d
+    :commit: 2e1ebe3f5b29191034476aa4d5b6f7ac5a0a66cd
     :git: https://github.com/averello/Ents.git
   RepresentationKit:
-    :commit: 13a45a3a9e3e93def7662d6f7719e9fe4920f5d3
+    :commit: fc44c427ad7ee9c41b52248fd237e63a7dc59406
     :git: https://github.com/averello/RepresentationKit.git
 
 SPEC CHECKSUMS:
-  ContentKit: b0ded7d9d57f77ca3c87261c97d606b4ea9f7bdf
-  Ents: f7469b80b3507e2bbc936c96b2cf61e79c0ce809
-  LogKit: 580d198cb760af1e217ae6af12c26d04b0f14a6b
-  RepresentationKit: 1ae7749916ed014403db30f3d38204d7e000dbd1
+  ContentKit: 1fd3e6e87cee63cc68e728d12bf9c0b764239249
+  Ents: be561facca59ddd5c73181c66cdd904ffe496079
+  LogKit: aa589f3297e08af07d93a84a58606222bfae7dd8
+  RepresentationKit: 13e70a642c8f6ff8ea045b76cbe7814d443e735d
 
-PODFILE CHECKSUM: 806623dc0beef0c14dd3cf055f7d62d4cb652c7c
+PODFILE CHECKSUM: 3f38b00fad1253f3b3803c11fa7ff03ce6c64db1
 
 COCOAPODS: 1.2.1

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LogKit'
-  s.version          = '2.0'
+  s.version          = '2.1'
   s.summary          = 'Quick logging based on representations of objects.'
 
 # This description is used to generate tags and improve search results.
@@ -31,6 +31,11 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'LogKit/Classes/**/*'
+
+
+  s.xcconfig = { 
+	  "SWIFT_VERSION" => '4.0'
+  }
   
   # s.resource_bundles = {
   #   'LogKit' => ['LogKit/Assets/*.png']

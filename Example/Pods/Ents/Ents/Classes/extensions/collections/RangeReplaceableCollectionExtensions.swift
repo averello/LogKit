@@ -49,6 +49,21 @@ public extension RangeReplaceableCollection {
         return mutant
     }
     
+    /// creates a new collection populated by the given elements at the end
+    ///
+    ///     let a = ["1", "2", "3"]
+    ///     let appended = a.appending(elementOf: ["4", "5"])
+    ///     print(appended)
+    ///     // prints "["1", "2", "3", "4", "5"]"
+    ///
+    /// - Parameter elementsOf: the elements to append
+    /// - Returns: a new collection populated by the given elements at the end
+    public func appending<S>(elementsOf newElements: S) -> Self where S : Sequence, Self.Element == S.Element {
+        var mutant = self
+        mutant.append(contentsOf: newElements)
+        return mutant
+    }
+    
     /// creates a new collection populated by the given element at the start
     ///
     ///     let a = ["1", "2", "3"]
@@ -64,6 +79,20 @@ public extension RangeReplaceableCollection {
         return mutant
     }
     
+    /// creates a new collection populated by the given elements at the start
+    ///
+    ///     let a = ["1", "2", "3"]
+    ///     let prepended = a.prepending(element: ["-1", "0"])
+    ///     print(prepended)
+    ///     // prints "["-1", "0", "1", "2", "3"]"
+    ///
+    /// - Parameter elementsOf: the elements to prepend
+    /// - Returns: creates a new collection populated by the given elements at the start
+    public func prepending<C>(elementsOf newElements: C) -> Self where C: Collection, Self.Element == C.Element {
+        var mutant = self
+        mutant.insert(contentsOf: newElements, at: mutant.startIndex)
+        return mutant
+    }
     
     // sieve() returns [Self.Iterator.Element],
     /// - Parameter predicate: the predicate
@@ -73,11 +102,20 @@ public extension RangeReplaceableCollection {
         return try Self(self.sieve(predicate))
     }
     
-    /// remove elements that satisfy the given predicate
+    /// Remove elements that satisfy the given predicate
     /// - Parameter predicate: the predicate
     /// - SeeAlso: sieve(:)
     public mutating func remove(elementsSatisfying predicate: (Self.Iterator.Element) throws -> Bool) rethrows {
         self = try self.removing(elementsSatisfying: predicate)
+    }
+}
+
+extension RangeReplaceableCollection where Self.Element: AnyObject {
+    
+    public mutating func remove(element: Element) {
+        self.remove(elementsSatisfying: { (e: Element) -> Bool in
+            return (e === element)
+        })
     }
 }
 

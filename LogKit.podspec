@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LogKit'
-  s.version          = '2.1'
+  s.version          = '2.2'
   s.summary          = 'Quick logging based on representations of objects.'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
 
 
   s.xcconfig = { 
-	  "SWIFT_VERSION" => '4.0'
+	  "SWIFT_VERSION" => '4.2'
   }
   
   # s.resource_bundles = {
